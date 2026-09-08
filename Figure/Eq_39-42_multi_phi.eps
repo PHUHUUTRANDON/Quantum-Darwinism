@@ -1,10 +1,9 @@
 %!PS-Adobe-3.0 EPSF-3.0
 %%BoundingBox: 0 0 432 360
 %%HiResBoundingBox: 0.000000 0.000000 432.000000 360.000000
-%%Invocation: gs -dBATCH -dNOPAUSE -r6000 -sDEVICE=ps2write -dEPSCrop -sOutputFile=? ?
-%%Creator: GPL Ghostscript 10071 (ps2write)
+%%Creator: MiKTeX GPL Ghostscript 925 (ps2write)
 %%LanguageLevel: 2
-%%CreationDate: D:20260904094340+07'00'
+%%CreationDate: D:20260905085133+07'00'
 %%EndComments
 %%BeginProlog
 save
@@ -16,28 +15,16 @@ newpath
 %%EndProlog
 %%Page 1 1
 %%BeginProlog
-10 dict dup begin
 /DSC_OPDFREAD true def
 /SetPageSize true def
 /EPS2Write false def
-end
-count 0 ne{
-dup type/dicttype eq{
-dup/EPS2Write known{
-dup/EPS2Write get not
-}
-{
-true
-}ifelse
-}
-{
-true
-}ifelse
-}
-{
-true
+currentdict/DSC_OPDFREAD known{
+currentdict/DSC_OPDFREAD get
+}{
+false
 }ifelse
 10 dict begin
+/DSC_OPDFREAD exch def
 /this currentdict def
 /y 720 def
 /ebuf 200 string def
@@ -49,7 +36,6 @@ true
 36//this/y get moveto
 //this/y 2 copy get 12 sub put
 }bind def
-{
 errordict/handleerror
 {systemdict begin
 $error begin
@@ -101,24 +87,8 @@ quit
 end
 end
 }bind readonly put
-}if
 end
 50 dict begin
-count 0 ne{
-dup type/dicttype eq{
-{def}forall
-false
-}
-{
-true
-}ifelse
-}
-{
-true
-}ifelse
-{
-(   *** Warning: global definitions dictionary not found, file may be corrupted.\n)print flush
-}if
 /DefaultSwitch
 {
 dup where{
@@ -645,7 +615,6 @@ copypage
 }repeat
 }if
 EPS2Write not{showpage}if
-pagesave restore
 }if
 }bind def
 /stream
@@ -872,7 +841,6 @@ pop pop
 dup/ImmediateExec true put
 dup/IsPage true put
 SetPageSize{dup/Context get//SetupPageView exec}if
-/pagesave save def
 }bind def
 /FontFileDaemon
 {
@@ -3542,10 +3510,7 @@ grestore
 //GraphicState/FontMatrixNonHV currentfont/FontMatrix get 1 get 0 ne put
 }bind def
 /ShowText
-{
-//GraphicState/TextRenderingMode get dup 0 eq
-exch 3 eq not currentfont/FontType get 3 eq and or
-{
+{//GraphicState/TextRenderingMode get 0 eq{
 //GraphicState/WordSpacing get 0
 32
 //GraphicState/CharacterSpacing get 0
@@ -3600,26 +3565,12 @@ exch cshow
 }ifelse
 }bind def
 /ShowTextBeg
-{
-//GraphicState/TextRenderingMode get dup 0 ne
-{
-3 ne
-currentfont/FontType get 3 eq not and{
+{//GraphicState/TextRenderingMode get 0 ne{
 currentpoint newpath moveto
 }if
-}
-{
-pop
-}ifelse
 }bind def
 /ShowTextEnd
-{
-//GraphicState/TextRenderingMode get
-currentfont/FontType get 3 eq{
-dup 3 ne{
-pop 0
-}if
-}if
+{//GraphicState/TextRenderingMode get
 {dup 1 eq{
 stroke exit
 }if
@@ -8371,7 +8322,7 @@ endobj
 %%EndResource
 %%BeginResource: procset (PDF Font obj_13)
 13 0 obj
-<</BaseFont/BBVQCR+CMR12/FontDescriptor 14 0 R/Type/Font
+<</BaseFont/BRDNKY+CMR12/FontDescriptor 14 0 R/Type/Font
 /FirstChar 40/LastChar 54/Widths[ 380 380 0 0 0 0 0 0
 0 0 489 0 489 0 489]
 /Subtype/Type1>>
@@ -8379,7 +8330,7 @@ endobj
 %%EndResource
 %%BeginResource: procset (PDF Font obj_11)
 11 0 obj
-<</BaseFont/DGGVZQ+CMSY10/FontDescriptor 12 0 R/Type/Font
+<</BaseFont/HMMSXJ+CMSY10/FontDescriptor 12 0 R/Type/Font
 /FirstChar 65/LastChar 83/Widths[ 798 0 0 0 0 719 0 0 544 0 0 0 0 0 0
 0 0 0 605]
 /Subtype/Type1>>
@@ -8387,7 +8338,7 @@ endobj
 %%EndResource
 %%BeginResource: procset (PDF Font obj_9)
 9 0 obj
-<</BaseFont/SGPDWA+CMMI12/FontDescriptor 10 0 R/Type/Font
+<</BaseFont/IHNSWF+CMMI12/FontDescriptor 10 0 R/Type/Font
 /FirstChar 25/LastChar 109/Widths[ 555 0 0 0 0 579 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -8406,7 +8357,7 @@ endobj
 %%EndResource
 %%BeginResource: procset (PDF Font obj_7)
 7 0 obj
-<</BaseFont/AIKGDZ+CMR17/FontDescriptor 8 0 R/Type/Font
+<</BaseFont/IOTPSV+CMR17/FontDescriptor 8 0 R/Type/Font
 /FirstChar 5/LastChar 117/Widths[ 693 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 354 354 0 0 0 0 0 0
@@ -8426,7 +8377,7 @@ endobj
 %%EndResource
 %%BeginResource: file (PDF FontDescriptor obj_14)
 14 0 obj
-<</Type/FontDescriptor/FontName/BBVQCR+CMR12/FontBBox[0 -251 462 750]/Flags 65568
+<</Type/FontDescriptor/FontName/BRDNKY+CMR12/FontBBox[0 -251 462 750]/Flags 65568
 /Ascent 750
 /CapHeight 750
 /Descent -251
@@ -8491,7 +8442,7 @@ endobj
 %%EndResource
 %%BeginResource: file (PDF FontDescriptor obj_12)
 12 0 obj
-<</Type/FontDescriptor/FontName/DGGVZQ+CMSY10/FontBBox[-24 -50 830 722]/Flags 65568
+<</Type/FontDescriptor/FontName/HMMSXJ+CMSY10/FontBBox[-24 -50 830 722]/Flags 65568
 /Ascent 722
 /CapHeight 722
 /Descent -50
@@ -8560,14 +8511,13 @@ endobj
 %%EndResource
 %%BeginResource: file (PDF FontDescriptor obj_10)
 10 0 obj
-<</Type/FontDescriptor/FontName/SGPDWA+CMMI12/FontBBox[0 -204 858 694]/Flags 131076
+<</Type/FontDescriptor/FontName/IHNSWF+CMMI12/FontBBox[0 -204 858 694]/Flags 4
 /Ascent 694
-/CapHeight 683
+/CapHeight 694
 /Descent -204
 /ItalicAngle 0
 /StemV 128
 /MissingWidth 500
-/XHeight 441
 /CharSet(/H/N/m/phi/pi)/FontFile 18 0 R>>
 endobj
 %%EndResource
@@ -8636,14 +8586,13 @@ endobj
 %%EndResource
 %%BeginResource: file (PDF FontDescriptor obj_8)
 8 0 obj
-<</Type/FontDescriptor/FontName/AIKGDZ+CMR17/FontBBox[0 -250 796 749]/Flags 131076
+<</Type/FontDescriptor/FontName/IOTPSV+CMR17/FontBBox[0 -250 796 749]/Flags 4
 /Ascent 749
-/CapHeight 699
+/CapHeight 749
 /Descent -250
 /ItalicAngle 0
 /StemV 119
 /MissingWidth 500
-/XHeight 442
 /CharSet(/I/M/Pi/Q/a/colon/eight/equal/f/four/i/l/m/n/o/one/parenleft/parenright/r/six/t/two/u/zero)/FontFile 19 0 R>>
 endobj
 %%EndResource
@@ -8791,26 +8740,37 @@ endobj
 >>
 endobj
 %%EndPageSetup
+/pagesave save def
 5 0 obj
-<</Length 6540>>stream
+<</Length 8797>>stream
 q 0.012 0 0 0.012 0 0 cm
 1 G
 1 g
-0 0 36000 30000 re
+q 2.20859 0 0 2.20859 0 0 cm
+0 0 m
+16300 0 l
+16300 13583.3 l
+0 13583.3 l
 f
-9064.34 5143.77 26035.7 23956.2 re
+Q
+q 2.15337 0 0 2.15337 0 0 cm
+4209.37 2388.7 m
+16300 2388.7 l
+16300 13513.7 l
+4209.37 13513.7 l
 f
-false setstrokeadjust
+Q
 q
 9064.33 5143.75 26035.7 23956.3 re W n
-[ 246.667 106.667 ] 0 d
-66.6667 w
+[ 138.167 59.748 ] 0 d
+37.3425 w
 1 j
 0.501953 g
 0.501953 G
-10247.8 5143.77 m
-10247.8 29100 l
-S
+q 1.78528 0 0 1.78528 0 0 cm
+5740.16 2881.22 m
+5740.16 16300 l
+S Q
 Q
 0 G
 0 g
@@ -8824,13 +8784,14 @@ f
 S
 q
 9064.33 5143.75 26035.7 23956.3 re W n
-[ 246.667 106.667 ] 0 d
-66.6667 w
+[ 138.167 59.748 ] 0 d
+37.3425 w
 0.501953 g
 0.501953 G
-14981.5 5143.77 m
-14981.5 29100 l
-S
+q 1.78528 0 0 1.78528 0 0 cm
+8391.72 2881.22 m
+8391.72 16300 l
+S Q
 Q
 14981.5 5143.77 m
 14981.5 4477.11 l
@@ -8840,219 +8801,327 @@ f
 S
 q
 9064.33 5143.75 26035.7 23956.3 re W n
-[ 246.667 106.667 ] 0 d
-66.6667 w
+[ 138.167 59.748 ] 0 d
+37.3425 w
 0.501953 g
 0.501953 G
-19715.3 5143.77 m
-19715.3 29100 l
-S
+q 1.78528 0 0 1.78528 0 0 cm
+11043.3 2881.22 m
+11043.3 16300 l
+S Q
 Q
-19715.3 5143.77 m
-19715.3 4477.11 l
+q 1.20952 0 0 1.20952 0 0 cm
+16300 4252.72 m
+16300 3701.54 l
 f
-19715.3 5143.77 m
-19715.3 4477.11 l
-S
+Q
+103.346 w
+q 1.20952 0 0 1.20952 0 0 cm
+16300 4252.72 m
+16300 3701.54 l
+S Q
 q
 9064.33 5143.75 26035.7 23956.3 re W n
-[ 246.667 106.667 ] 0 d
-66.6667 w
+[ 138.167 59.748 ] 0 d
+37.3425 w
 0.501953 g
 0.501953 G
-24449 5143.77 m
-24449 29100 l
-S
+q 1.78528 0 0 1.78528 0 0 cm
+13694.8 2881.22 m
+13694.8 16300 l
+S Q
 Q
-24449.1 5143.77 m
-24449.1 4477.11 l
+q 1.49994 0 0 1.49994 0 0 cm
+16300 3429.31 m
+16300 2984.85 l
 f
-24449.1 5143.77 m
-24449.1 4477.11 l
-S
+Q
+83.3365 w
+q 1.49994 0 0 1.49994 0 0 cm
+16300 3429.31 m
+16300 2984.85 l
+S Q
 q
 9064.33 5143.75 26035.7 23956.3 re W n
-[ 246.667 106.667 ] 0 d
-66.6667 w
+[ 137.775 59.5785 ] 0 d
+37.2365 w
 0.501953 g
 0.501953 G
-29182.8 5143.77 m
-29182.8 29100 l
-S
+q 1.79036 0 0 1.79036 0 0 cm
+16300 2873.04 m
+16300 16253.7 l
+S Q
 Q
-29182.8 5143.77 m
-29182.8 4477.11 l
+q 1.79036 0 0 1.79036 0 0 cm
+16300 2873.04 m
+16300 2500.68 l
 f
-29182.8 5143.77 m
-29182.8 4477.11 l
-S
+Q
+69.8184 w
+q 1.79036 0 0 1.79036 0 0 cm
+16300 2873.04 m
+16300 2500.68 l
+S Q
 q
 9064.33 5143.75 26035.7 23956.3 re W n
-[ 246.667 106.667 ] 0 d
-66.6667 w
+[ 118.546 51.2631 ] 0 d
+32.0394 w
 0.501953 g
 0.501953 G
-33916.6 5143.77 m
-33916.6 29100 l
-S
+q 2.08077 0 0 2.08077 0 0 cm
+16300 2472.05 m
+16300 13985.2 l
+S Q
 Q
-33916.6 5143.77 m
-33916.6 4477.11 l
+q 2.08077 0 0 2.08077 0 0 cm
+16300 2472.05 m
+16300 2151.66 l
 f
-33916.6 5143.77 m
-33916.6 4477.11 l
-S
+Q
+60.0739 w
+q 2.08077 0 0 2.08077 0 0 cm
+16300 2472.05 m
+16300 2151.66 l
+S Q
 q
 9064.33 5143.75 26035.7 23956.3 re W n
-[ 246.667 106.667 ] 0 d
-66.6667 w
+[ 114.549 49.5347 ] 0 d
+30.9592 w
 0.501953 g
 0.501953 G
-9064.34 5688.23 m
-35100 5688.23 l
-S
+q 2.15337 0 0 2.15337 0 0 cm
+4209.37 2641.54 m
+16300 2641.54 l
+S Q
 Q
 9064.33 5688.23 m
 8397.66 5688.23 l
 f
+125 w
 9064.33 5688.23 m
 8397.66 5688.23 l
 S
 q
 9064.33 5143.75 26035.7 23956.3 re W n
-[ 246.667 106.667 ] 0 d
-66.6667 w
+[ 114.549 49.5347 ] 0 d
+30.9592 w
 0.501953 g
 0.501953 G
-9064.34 16577.4 m
-35100 16577.4 l
-S
+q 2.15337 0 0 2.15337 0 0 cm
+4209.37 7698.35 m
+16300 7698.35 l
+S Q
 Q
-9064.33 16577.4 m
-8397.66 16577.4 l
+q 1.01702 0 0 1.01702 0 0 cm
+8912.65 16300 m
+8257.13 16300 l
 f
-9064.33 16577.4 m
-8397.66 16577.4 l
-S
+Q
+122.908 w
+q 1.01702 0 0 1.01702 0 0 cm
+8912.65 16300 m
+8257.13 16300 l
+S Q
 q
 9064.33 5143.75 26035.7 23956.3 re W n
-[ 246.667 106.667 ] 0 d
-66.6667 w
+[ 114.549 49.5347 ] 0 d
+30.9592 w
 0.501953 g
 0.501953 G
-9064.34 27466.6 m
-35100 27466.6 l
-S
+q 2.15337 0 0 2.15337 0 0 cm
+4209.37 12755.2 m
+16300 12755.2 l
+S Q
 Q
-9064.33 27466.6 m
-8397.66 27466.6 l
+q 1.68507 0 0 1.68507 0 0 cm
+5379.21 16300 m
+4983.58 16300 l
 f
-9064.33 27466.6 m
-8397.66 27466.6 l
-S
+Q
+74.181 w
+q 1.68507 0 0 1.68507 0 0 cm
+5379.21 16300 m
+4983.58 16300 l
+S Q
 q
 9064.33 5143.75 26035.7 23956.3 re W n
-[ 246.667 106.667 ] 0 d
-66.6667 w
+[ 114.549 49.5347 ] 0 d
+30.9592 w
 0.501953 g
 0.501953 G
-9064.34 11132.8 m
-35100 11132.8 l
-S
-9064.34 22022 m
-35100 22022 l
-S
+q 2.15337 0 0 2.15337 0 0 cm
+4209.37 5169.95 m
+16300 5169.95 l
+S Q
+q 2.15337 0 0 2.15337 0 0 cm
+4209.37 10226.7 m
+16300 10226.7 l
+S Q
 Q
 q
 9064.33 5143.75 26035.7 23956.3 re W n
-[ 1333.33 2666.67 ] 0 d
-333.333 w
+[ 640.788 1281.58 ] 0 d
+160.197 w
 0 0 1 rg
 0 0 1 RG
-10247.8 5688.23 m
-12614.7 16577.4 l
-33916.6 16577.4 l
-S
-[ 333.333 550 ] 0 d
-10247.8 27466.6 m
-12614.7 16577.4 l
-33916.6 16577.4 l
-S
-[ 1333.33 2666.67 ] 0 d
+q 2.08077 0 0 2.08077 0 0 cm
+4924.99 2733.71 m
+6062.49 7966.96 l
+7199.99 7966.96 l
+8337.5 7966.96 l
+9475 7966.96 l
+10612.5 7966.96 l
+11750 7966.96 l
+12887.5 7966.96 l
+14025 7966.96 l
+15162.5 7966.96 l
+16300 7966.96 l
+S Q
+[ 160.197 264.325 ] 0 d
+q 2.08077 0 0 2.08077 0 0 cm
+4924.99 13200.2 m
+6062.49 7966.96 l
+7199.99 7966.96 l
+8337.5 7966.96 l
+9475 7966.96 l
+10612.5 7966.96 l
+11750 7966.96 l
+12887.5 7966.96 l
+14025 7966.96 l
+15162.5 7966.96 l
+16300 7966.96 l
+S Q
+[ 640.788 1281.58 ] 0 d
 0 0.501953 0 rg
 0 0.501953 0 RG
-10247.8 5688.23 m
-12614.7 12231.3 l
-33916.6 12231.3 l
-S
-[ 333.333 550 ] 0 d
-10247.8 18774.3 m
-12614.7 12231.3 l
-33916.6 12231.3 l
-S
-[ 1333.33 2666.67 ] 0 d
+q 2.08077 0 0 2.08077 0 0 cm
+4924.99 2733.71 m
+6062.49 5878.25 l
+7199.99 5878.25 l
+8337.5 5878.25 l
+9475 5878.25 l
+10612.5 5878.25 l
+11750 5878.25 l
+12887.5 5878.25 l
+14025 5878.25 l
+15162.5 5878.25 l
+16300 5878.25 l
+S Q
+[ 160.197 264.325 ] 0 d
+q 2.08077 0 0 2.08077 0 0 cm
+4924.99 9022.78 m
+6062.49 5878.25 l
+7199.99 5878.25 l
+8337.5 5878.25 l
+9475 5878.25 l
+10612.5 5878.25 l
+11750 5878.25 l
+12887.5 5878.25 l
+14025 5878.25 l
+15162.5 5878.25 l
+16300 5878.25 l
+S Q
+[ 640.788 1281.58 ] 0 d
 1 0 0 rg
 1 0 0 RG
-10247.8 5688.23 m
-12614.7 9549.31 l
-33916.6 9549.31 l
-S
-[ 333.333 550 ] 0 d
-10247.8 13410.4 m
-12614.7 9549.31 l
-33916.6 9549.31 l
-S
-[ 246.667 106.667 ] 0 d
-66.6667 w
+q 2.08077 0 0 2.08077 0 0 cm
+4924.99 2733.71 m
+6062.49 4589.31 l
+7199.99 4589.31 l
+8337.5 4589.31 l
+9475 4589.31 l
+10612.5 4589.31 l
+11750 4589.31 l
+12887.5 4589.31 l
+14025 4589.31 l
+15162.5 4589.31 l
+16300 4589.31 l
+S Q
+[ 160.197 264.325 ] 0 d
+q 2.08077 0 0 2.08077 0 0 cm
+4924.99 6444.91 m
+6062.49 4589.31 l
+7199.99 4589.31 l
+8337.5 4589.31 l
+9475 4589.31 l
+10612.5 4589.31 l
+11750 4589.31 l
+12887.5 4589.31 l
+14025 4589.31 l
+15162.5 4589.31 l
+16300 4589.31 l
+S Q
+[ 114.549 49.5347 ] 0 d
+30.9592 w
 0.501953 g
 0.501953 G
-9064.34 5688.23 m
-35100 5688.23 l
-S
+q 2.15337 0 0 2.15337 0 0 cm
+4209.37 2641.54 m
+16300 2641.54 l
+S Q
 Q
+70.0172 w
 2 J
 0 j
-9064.34 5143.77 m
-9064.34 29100 l
-S
-35100 5143.77 m
-35100 29100 l
-S
-9064.34 5143.77 m
-35100 5143.77 l
-S
-9064.34 29100 m
-35100 29100 l
-S
-150 w
+q 1.78528 0 0 1.78528 0 0 cm
+5077.28 2881.22 m
+5077.28 16300 l
+S Q
+58.0484 w
+q 2.15337 0 0 2.15337 0 0 cm
+16300 2388.7 m
+16300 13513.7 l
+S Q
+q 2.15337 0 0 2.15337 0 0 cm
+4209.37 2388.7 m
+16300 2388.7 l
+S Q
+q 2.15337 0 0 2.15337 0 0 cm
+4209.37 13513.7 m
+16300 13513.7 l
+S Q
+91.3061 w
 1 j
 0 0 1 rg
 0 0 1 RG
-12497.2 26778.1 m
-15497.2 26778.1 l
-S
+q 1.64283 0 0 1.64283 0 0 cm
+7607.13 16300 m
+8520.19 16300 l
+9433.26 16300 l
+S Q
+99.948 w
 0 0.501953 0 rg
 0 0.501953 0 RG
-12497.2 24462.7 m
-15497.2 24462.7 l
-S
+q 1.50078 0 0 1.50078 0 0 cm
+8327.13 16300 m
+9326.61 16300 l
+10326.1 16300 l
+S Q
+110.397 w
 1 0 0 rg
 1 0 0 RG
-12497.2 22147.4 m
-15497.2 22147.4 l
-S
-[ 666.667 1333.33 ] 0 d
-166.667 w
+q 1.35874 0 0 1.35874 0 0 cm
+9197.66 16300 m
+10301.6 16300 l
+11405.6 16300 l
+S Q
+[ 408.373 816.745 ] 0 d
+102.093 w
 0 J
 0 g
 0 G
-22130.4 26609.7 m
-25130.4 26609.7 l
-S
-[ 166.667 275 ] 0 d
-22130.4 24160.5 m
-25130.4 24160.5 l
-S
+q 1.6325 0 0 1.6325 0 0 cm
+13556.2 16300 m
+14475 16300 l
+15393.8 16300 l
+S Q
+[ 108.103 178.37 ] 0 d
+108.103 w
+q 1.54174 0 0 1.54174 0 0 cm
+14354.1 15670.9 m
+15327.1 15670.9 l
+16300 15670.9 l
+S Q
 q
 0 0 m
 W n
@@ -9257,6 +9326,7 @@ Q
 
 endstream
 endobj
+pagesave restore
 %%PageTrailer
 %%Trailer
 end
